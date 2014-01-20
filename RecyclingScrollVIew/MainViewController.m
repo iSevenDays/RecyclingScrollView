@@ -18,11 +18,6 @@
 {
   bottomScrollView.delegate = self;
   array = [[Data alloc] generateArray];
-  if(self.delegate != nil)
-  {
-    [self.delegate MainViewController:self itemsArray:array];
-    [self.delegate MainViewController:self itemChanged:0];
-  }
   tableForFirstPage = [[UITableView alloc] init];
   tableForSecondPage = [[UITableView alloc] init];
   tableForThirdPage = [[UITableView alloc] init];
@@ -41,8 +36,7 @@
   [mainViewOfScroller addSubview:tableForSecondPage];
   [mainViewOfScroller addSubview:tableForThirdPage];
   
-  
-  [bottomScrollView scrollRectToVisible:CGRectMake(320, 0, 320, 416) animated:NO];
+  [bottomScrollView scrollRectToVisible:CGRectMake(320, 0, 320, bottomScrollView.frame.size.height) animated:NO];
   
   currIndex = 0;
   prevIndex = array.count - 1;
@@ -91,9 +85,8 @@
 {
   NSDictionary *views = NSDictionaryOfVariableBindings(tableForFirstPage, tableForSecondPage, tableForThirdPage, mainViewOfScroller, bottomScrollView, topScrollView);
   //320 * 3 = 960, we reserve a memory for 3 tables
-  [bottomScrollView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[mainViewOfScroller(960)]|" options:0 metrics:0 views:views]];
   [mainViewOfScroller addConstraints:[NSLayoutConstraint
-                                      constraintsWithVisualFormat:@"|[tableForFirstPage(320)][tableForSecondPage(320)][tableForThirdPage(320)]|"
+                                      constraintsWithVisualFormat:@"H:|[tableForFirstPage][tableForSecondPage(==tableForFirstPage)][tableForThirdPage(==tableForSecondPage)]|"
                                       options:0
                                       metrics:0
                                       views:views]];
@@ -203,7 +196,6 @@
   CGFloat defaultxOffsetOfTopScrollView = 120;
   offset.x /= defaultxOffsetOfBottomScrollView/defaultxOffsetOfTopScrollView;//about 2.66
   topScrollView.contentOffset = offset;
-  NSLog(@"offset: %f", offset.x);
 }
 #pragma mark Other
 - (void)viewDidLoad
