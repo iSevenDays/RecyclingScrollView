@@ -15,16 +15,20 @@
 		145083D1188A877F002F743E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 145083D0188A877F002F743E /* AppDelegate.m */; };
 		145083DD188A877F002F743E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 145083DB188A877F002F743E /* Main.storyboard */; };
 		145083DF188A877F002F743E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 145083DE188A877F002F743E /* Images.xcassets */; };
-		145083E6188A877F002F743E /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 145083E5188A877F002F743E /* XCTest.framework */; };
 		145083E7188A877F002F743E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 145083C0188A877F002F743E /* Foundation.framework */; };
 		145083E8188A877F002F743E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 145083C4188A877F002F743E /* UIKit.framework */; };
 		145083F0188A877F002F743E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 145083EE188A877F002F743E /* InfoPlist.strings */; };
-		145083F2188A877F002F743E /* RecyclingScrollViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 145083F1188A877F002F743E /* RecyclingScrollViewTests.m */; };
-		14508409188A9674002F743E /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14508408188A9674002F743E /* MainViewController.m */; };
+		14508409188A9674002F743E /* RecyclingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 14508408188A9674002F743E /* RecyclingScrollView.m */; };
 		1450840C188A970D002F743E /* TopScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1450840B188A970D002F743E /* TopScrollView.m */; };
 		1450840F188A97FC002F743E /* Data.m in Sources */ = {isa = PBXBuildFile; fileRef = 1450840E188A97FC002F743E /* Data.m */; };
 		14508412188A993A002F743E /* Product.m in Sources */ = {isa = PBXBuildFile; fileRef = 14508411188A993A002F743E /* Product.m */; };
+		146B7FA1188EF6B000B0681C /* TestViewControllerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 146B7FA0188EF6B000B0681C /* TestViewControllerTest.m */; };
+		146B7FC2188EF6F000B0681C /* OCMockitoIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 146B7FA3188EF6DC00B0681C /* OCMockitoIOS.framework */; };
+		146B7FC3188EF6F400B0681C /* OCHamcrestIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 146B7FA2188EF6DC00B0681C /* OCHamcrestIOS.framework */; };
+		146B7FC5189008A500B0681C /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 146B7FC4189008A500B0681C /* SenTestingKit.framework */; };
+		14809DE0188D946300ADCB4B /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14809DDF188D946300ADCB4B /* TestViewController.m */; };
 		149D4D05188D04CB007AB442 /* ReadMe.txt in Resources */ = {isa = PBXBuildFile; fileRef = 149D4D04188D04CB007AB442 /* ReadMe.txt */; };
+		14FAA90A18ACEA0800A7D345 /* Dict.m in Sources */ = {isa = PBXBuildFile; fileRef = 14FAA90918ACEA0800A7D345 /* Dict.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +38,20 @@
 			proxyType = 1;
 			remoteGlobalIDString = 145083BC188A877F002F743E;
 			remoteInfo = RecyclingScrollView;
+		};
+		146B7FBE188EF6DC00B0681C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 146B7FB4188EF6DC00B0681C /* testing_mock.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 14421202184E006B0019A454;
+			remoteInfo = testing_mock;
+		};
+		146B7FC0188EF6DC00B0681C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 146B7FB4188EF6DC00B0681C /* testing_mock.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 14421226184E006B0019A454;
+			remoteInfo = testing_mockTests;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -54,16 +72,37 @@
 		145083E5188A877F002F743E /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		145083ED188A877F002F743E /* RecyclingScrollViewTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RecyclingScrollViewTests-Info.plist"; sourceTree = "<group>"; };
 		145083EF188A877F002F743E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		145083F1188A877F002F743E /* RecyclingScrollViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RecyclingScrollViewTests.m; sourceTree = "<group>"; };
-		14508407188A9674002F743E /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
-		14508408188A9674002F743E /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		14508407188A9674002F743E /* RecyclingScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecyclingScrollView.h; sourceTree = "<group>"; };
+		14508408188A9674002F743E /* RecyclingScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecyclingScrollView.m; sourceTree = "<group>"; };
 		1450840A188A970D002F743E /* TopScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopScrollView.h; sourceTree = "<group>"; };
 		1450840B188A970D002F743E /* TopScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopScrollView.m; sourceTree = "<group>"; };
 		1450840D188A97FC002F743E /* Data.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Data.h; sourceTree = "<group>"; };
 		1450840E188A97FC002F743E /* Data.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Data.m; sourceTree = "<group>"; };
 		14508410188A993A002F743E /* Product.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Product.h; sourceTree = "<group>"; };
 		14508411188A993A002F743E /* Product.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Product.m; sourceTree = "<group>"; };
+		146B7FA0188EF6B000B0681C /* TestViewControllerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewControllerTest.m; sourceTree = "<group>"; };
+		146B7FA2188EF6DC00B0681C /* OCHamcrestIOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OCHamcrestIOS.framework; path = "../for_testing/OCHamcrest-3.0.1/OCHamcrestIOS.framework"; sourceTree = "<group>"; };
+		146B7FA3188EF6DC00B0681C /* OCMockitoIOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OCMockitoIOS.framework; path = "../for_testing/OCMockito-1.1.0/OCMockitoIOS.framework"; sourceTree = "<group>"; };
+		146B7FA6188EF6DC00B0681C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		146B7FA7188EF6DC00B0681C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		146B7FA9188EF6DC00B0681C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		146B7FAB188EF6DC00B0681C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		146B7FAD188EF6DC00B0681C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		146B7FAE188EF6DC00B0681C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		146B7FAF188EF6DC00B0681C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		146B7FB0188EF6DC00B0681C /* testing_mock-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "testing_mock-Info.plist"; sourceTree = "<group>"; };
+		146B7FB1188EF6DC00B0681C /* testing_mock-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "testing_mock-Prefix.pch"; sourceTree = "<group>"; };
+		146B7FB3188EF6DC00B0681C /* testing_mock.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = testing_mock.xcdatamodel; sourceTree = "<group>"; };
+		146B7FB4188EF6DC00B0681C /* testing_mock.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = testing_mock.xcodeproj; sourceTree = "<group>"; };
+		146B7FB9188EF6DC00B0681C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		146B7FBA188EF6DC00B0681C /* testing_mockTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "testing_mockTests-Info.plist"; sourceTree = "<group>"; };
+		146B7FBB188EF6DC00B0681C /* testing_mockTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = testing_mockTests.m; sourceTree = "<group>"; };
+		146B7FC4189008A500B0681C /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		14809DDE188D946300ADCB4B /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TestViewController.h; path = RecyclingScrollVIew/TestViewController.h; sourceTree = SOURCE_ROOT; };
+		14809DDF188D946300ADCB4B /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TestViewController.m; path = RecyclingScrollVIew/TestViewController.m; sourceTree = SOURCE_ROOT; };
 		149D4D04188D04CB007AB442 /* ReadMe.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ReadMe.txt; sourceTree = "<group>"; };
+		14FAA90818ACEA0800A7D345 /* Dict.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Dict.h; path = RecyclingScrollVIew/Dict.h; sourceTree = SOURCE_ROOT; };
+		14FAA90918ACEA0800A7D345 /* Dict.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Dict.m; path = RecyclingScrollVIew/Dict.m; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,8 +120,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				145083E6188A877F002F743E /* XCTest.framework in Frameworks */,
+				146B7FC5189008A500B0681C /* SenTestingKit.framework in Frameworks */,
+				146B7FC2188EF6F000B0681C /* OCMockitoIOS.framework in Frameworks */,
 				145083E8188A877F002F743E /* UIKit.framework in Frameworks */,
+				146B7FC3188EF6F400B0681C /* OCHamcrestIOS.framework in Frameworks */,
 				145083E7188A877F002F743E /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -112,6 +153,10 @@
 		145083BF188A877F002F743E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				146B7FC4189008A500B0681C /* SenTestingKit.framework */,
+				146B7FA2188EF6DC00B0681C /* OCHamcrestIOS.framework */,
+				146B7FA3188EF6DC00B0681C /* OCMockitoIOS.framework */,
+				146B7FA4188EF6DC00B0681C /* testing_mock */,
 				145083C0188A877F002F743E /* Foundation.framework */,
 				145083C2188A877F002F743E /* CoreGraphics.framework */,
 				145083C4188A877F002F743E /* UIKit.framework */,
@@ -148,7 +193,7 @@
 		145083EB188A877F002F743E /* RecyclingScrollViewTests */ = {
 			isa = PBXGroup;
 			children = (
-				145083F1188A877F002F743E /* RecyclingScrollViewTests.m */,
+				146B7FA0188EF6B000B0681C /* TestViewControllerTest.m */,
 				145083EC188A877F002F743E /* Supporting Files */,
 			);
 			path = RecyclingScrollViewTests;
@@ -170,6 +215,8 @@
 				1450840E188A97FC002F743E /* Data.m */,
 				14508410188A993A002F743E /* Product.h */,
 				14508411188A993A002F743E /* Product.m */,
+				14FAA90818ACEA0800A7D345 /* Dict.h */,
+				14FAA90918ACEA0800A7D345 /* Dict.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -180,6 +227,8 @@
 				145083DB188A877F002F743E /* Main.storyboard */,
 				1450840A188A970D002F743E /* TopScrollView.h */,
 				1450840B188A970D002F743E /* TopScrollView.m */,
+				14508407188A9674002F743E /* RecyclingScrollView.h */,
+				14508408188A9674002F743E /* RecyclingScrollView.m */,
 				149D4D04188D04CB007AB442 /* ReadMe.txt */,
 			);
 			name = View;
@@ -188,10 +237,57 @@
 		145083FD188A8798002F743E /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				14508407188A9674002F743E /* MainViewController.h */,
-				14508408188A9674002F743E /* MainViewController.m */,
+				14809DDE188D946300ADCB4B /* TestViewController.h */,
+				14809DDF188D946300ADCB4B /* TestViewController.m */,
 			);
 			name = Controller;
+			sourceTree = "<group>";
+		};
+		146B7FA4188EF6DC00B0681C /* testing_mock */ = {
+			isa = PBXGroup;
+			children = (
+				146B7FA5188EF6DC00B0681C /* testing_mock */,
+				146B7FB4188EF6DC00B0681C /* testing_mock.xcodeproj */,
+				146B7FB7188EF6DC00B0681C /* testing_mockTests */,
+			);
+			name = testing_mock;
+			path = ../testing_mock;
+			sourceTree = "<group>";
+		};
+		146B7FA5188EF6DC00B0681C /* testing_mock */ = {
+			isa = PBXGroup;
+			children = (
+				146B7FA6188EF6DC00B0681C /* AppDelegate.h */,
+				146B7FA7188EF6DC00B0681C /* AppDelegate.m */,
+				146B7FA8188EF6DC00B0681C /* MainMenu.xib */,
+				146B7FAA188EF6DC00B0681C /* Credits.rtf */,
+				146B7FAC188EF6DC00B0681C /* InfoPlist.strings */,
+				146B7FAE188EF6DC00B0681C /* Images.xcassets */,
+				146B7FAF188EF6DC00B0681C /* main.m */,
+				146B7FB0188EF6DC00B0681C /* testing_mock-Info.plist */,
+				146B7FB1188EF6DC00B0681C /* testing_mock-Prefix.pch */,
+				146B7FB2188EF6DC00B0681C /* testing_mock.xcdatamodeld */,
+			);
+			path = testing_mock;
+			sourceTree = "<group>";
+		};
+		146B7FB5188EF6DC00B0681C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				146B7FBF188EF6DC00B0681C /* testing_mock.app */,
+				146B7FC1188EF6DC00B0681C /* testing_mockTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		146B7FB7188EF6DC00B0681C /* testing_mockTests */ = {
+			isa = PBXGroup;
+			children = (
+				146B7FB8188EF6DC00B0681C /* InfoPlist.strings */,
+				146B7FBA188EF6DC00B0681C /* testing_mockTests-Info.plist */,
+				146B7FBB188EF6DC00B0681C /* testing_mockTests.m */,
+			);
+			path = testing_mockTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,6 +353,12 @@
 			mainGroup = 145083B4188A877F002F743E;
 			productRefGroup = 145083BE188A877F002F743E /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 146B7FB5188EF6DC00B0681C /* Products */;
+					ProjectRef = 146B7FB4188EF6DC00B0681C /* testing_mock.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				145083BC188A877F002F743E /* RecyclingScrollView */,
@@ -264,6 +366,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		146B7FBF188EF6DC00B0681C /* testing_mock.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = testing_mock.app;
+			remoteRef = 146B7FBE188EF6DC00B0681C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		146B7FC1188EF6DC00B0681C /* testing_mockTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = testing_mockTests.xctest;
+			remoteRef = 146B7FC0188EF6DC00B0681C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		145083BB188A877F002F743E /* Resources */ = {
@@ -294,8 +413,10 @@
 			files = (
 				1450840F188A97FC002F743E /* Data.m in Sources */,
 				145083D1188A877F002F743E /* AppDelegate.m in Sources */,
-				14508409188A9674002F743E /* MainViewController.m in Sources */,
+				14508409188A9674002F743E /* RecyclingScrollView.m in Sources */,
 				14508412188A993A002F743E /* Product.m in Sources */,
+				14809DE0188D946300ADCB4B /* TestViewController.m in Sources */,
+				14FAA90A18ACEA0800A7D345 /* Dict.m in Sources */,
 				145083CD188A877F002F743E /* main.m in Sources */,
 				1450840C188A970D002F743E /* TopScrollView.m in Sources */,
 			);
@@ -305,7 +426,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				145083F2188A877F002F743E /* RecyclingScrollViewTests.m in Sources */,
+				146B7FA1188EF6B000B0681C /* TestViewControllerTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,6 +465,38 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
+		146B7FA8188EF6DC00B0681C /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				146B7FA9188EF6DC00B0681C /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		146B7FAA188EF6DC00B0681C /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				146B7FAB188EF6DC00B0681C /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		146B7FAC188EF6DC00B0681C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				146B7FAD188EF6DC00B0681C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		146B7FB8188EF6DC00B0681C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				146B7FB9188EF6DC00B0681C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -351,7 +504,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -391,7 +544,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -445,6 +598,7 @@
 				INFOPLIST_FILE = "RecyclingScrollView/RecyclingScrollView-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = RecyclingScrollView;
+				WARNING_CFLAGS = "-Weverything";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -458,6 +612,8 @@
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"/Users/seven/Documents/projects/for_testing/OCMockito-1.1.0",
+					"/Users/seven/Documents/projects/for_testing/OCHamcrest-3.0.1",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RecyclingScrollView/RecyclingScrollView-Prefix.pch";
@@ -468,6 +624,7 @@
 				INFOPLIST_FILE = "RecyclingScrollViewTests/RecyclingScrollViewTests-Info.plist";
 				PRODUCT_NAME = RecyclingScrollViewTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
+				WARNING_CFLAGS = "-Weverything";
 				WRAPPER_EXTENSION = xctest;
 			};
 			name = Debug;
@@ -481,12 +638,15 @@
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"/Users/seven/Documents/projects/for_testing/OCMockito-1.1.0",
+					"/Users/seven/Documents/projects/for_testing/OCHamcrest-3.0.1",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RecyclingScrollView/RecyclingScrollView-Prefix.pch";
 				INFOPLIST_FILE = "RecyclingScrollViewTests/RecyclingScrollViewTests-Info.plist";
 				PRODUCT_NAME = RecyclingScrollViewTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
+				WARNING_CFLAGS = "-Weverything";
 				WRAPPER_EXTENSION = xctest;
 			};
 			name = Release;
@@ -522,6 +682,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		146B7FB2188EF6DC00B0681C /* testing_mock.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				146B7FB3188EF6DC00B0681C /* testing_mock.xcdatamodel */,
+			);
+			currentVersion = 146B7FB3188EF6DC00B0681C /* testing_mock.xcdatamodel */;
+			path = testing_mock.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 145083B5188A877F002F743E /* Project object */;
 }

@@ -1,6 +1,4 @@
 #import <UIKit/UIKit.h>
-#import "MainViewController.h"
-@protocol TopScrollViewDelegate;
 @interface TopScrollView : UIScrollView<UIScrollViewDelegate>
 {
 }

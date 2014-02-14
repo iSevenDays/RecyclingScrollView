@@ -1,6 +1,9 @@
 #import "Data.h"
 #import "Product.h"
 @implementation Data
+{
+  NSInteger ident;
+}
 @synthesize products, name;
 - (id)initWithIdent:(NSInteger)iden andName:(NSString *)nam
 {

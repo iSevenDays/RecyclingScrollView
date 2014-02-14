@@ -8,7 +8,6 @@ products[]
  */
 @interface Data : NSObject
 {
-  NSInteger ident;
 }
 @property NSMutableArray *products;
 @property NSString *name;
